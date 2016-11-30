@@ -24,8 +24,8 @@ github_username:  "LingLinyp"
 facebook_username: "Ling Lin"
 weibo_username: "Ling Lin"
 
-#paginate: 8
-#paginate_path: "/page:num"
+paginate: 8
+paginate_path: "/page:num"
 
 # Comments   
 # support provider: disqus, duoshuo
@@ -42,8 +42,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 theme: minima
-#gems:
-  #- jekyll-paginate
+gems:
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
