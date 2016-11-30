@@ -1,0 +1,49 @@
+# Welcome to Jekyll!
+
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Ling Lin" 
+subtitle: "欢迎来到我的个人博客"
+email: your-email@domain.com
+description: "Ling's Blog"
+keywords: "Blog, Ling Lin, Lin Ling, 博客，前端，互联网，IT，设计，杂记"
+timezone: Aisa/Shanghai
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author 
+author: "Ling Lin"
+
+# SNS settings
+twitter_username: jekyllrb
+github_username:  "LingLinyp"
+facebook_username: "Ling Lin"
+weibo_username: "Ling Lin"
+
+#paginate: 8
+#paginate_path: "/page:num"
+
+# Comments   
+# support provider: disqus, duoshuo
+comments_provider: disqus
+# !!!Important!!! Please modify usernames below to yours
+duoshuo_username: mazhuang
+disqus_username: mzlogin
+# 在使用 disqus 的时候点击显示多说评论框
+lazy_load_duoshuo: true
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+theme: minima
+#gems:
+  #- jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
