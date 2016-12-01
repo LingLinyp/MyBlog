@@ -24,15 +24,14 @@ github_username:  "LingLinyp"
 facebook_username: "Ling Lin"
 weibo_username: "Ling Lin"
 
-paginate: 8
-paginate_path: "/page:num"
+
 
 # Comments   
 # support provider: disqus, duoshuo
-comments_provider: disqus
+#comments_provider: disqus
 # !!!Important!!! Please modify usernames below to yours
-duoshuo_username: mazhuang
-disqus_username: mzlogin
+#duoshuo_username: mazhuang
+#disqus_username: mzlogin
 # 在使用 disqus 的时候点击显示多说评论框
 lazy_load_duoshuo: true
 
@@ -42,8 +41,11 @@ markdown: kramdown
 kramdown:
   input: GFM
 theme: minima
-gems:
-  - jekyll-paginate
+gems: [jekyll-paginate]
+
+#paginate: 8
+#paginate_path: "page:num"
+
 exclude:
   - Gemfile
   - Gemfile.lock
