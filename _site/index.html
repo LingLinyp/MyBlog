@@ -1,9 +1,190 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
+
+  <!-- meta -->
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+<!-- bootstrap css&&js -->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="/font/css/font-awesome.min.css">
+
+<!-- custom css -->
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+<!-- custom js -->
+<script src="/js/particle.js"></script>
+
+<title>Ling Lin</title>
+
+  <body>
+     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Ling's Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+          <li><a href="/about.html">ABOUT ME</a></li>
+        <li><a href="/tags.html">CONTACT</a></li>
+      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <header class="animate-header">
+	<div class="text-center">
+		<h2></h2>
+	</div>      
+
+
+
+
 <body>
-<h1>Mee</h1>
+  <canvas id="MyCanvas">
+  </canvas>
 </body>
+<script type="text/javascript">
+	var canvas = document.getElementById('MyCanvas');
+	var ctx = canvas.getContext('2d');
+	var W =   window.innerWeight || document.documentElement.clientWidth || document.body.clientWidth;
+	var H = 450;
+	canvas.width = W;
+	canvas.height = H;
+
+	var particles_number = 50;
+	var particles = [];
+	for(i = 0; i < particles_number; i++){
+		particles.push({
+			           x: Math.random()*W,
+		               y: Math.random()*H,
+		               r: Math.random()*3+1,
+		              })
+	}
+
+   window.setInterval(draw, 100);
+   
+   function draw()
+   {
+   	ctx.clearRect(0, 0, W, H);
+
+	ctx.fillStyle = 'rgb(255,255,255)';
+	
+	ctx.beginPath();
+   	for(var i = 0; i < particles_number; i++)
+   	{
+   		var p = particles[i];
+   		ctx.moveTo(p.x, p.y);
+   		ctx.arc(p.x, p.y, p.r, 0, Math.PI *2);
+   	}
+   	
+   	ctx.fill();
+   	update();
+   
+   }
+
+  function update()
+	{
+		var step = 1;
+		for(var i = 0; i < particles_number; i++)
+		{
+			var p = particles[i];
+			p.x = p.x + step;
+			p.y = p.y + step;
+			
+
+			if (p.x > W)
+			{
+				p.x = p.x - W;
+			}
+			if (p.y > H)
+			{
+				p.y = p.y - H;
+		    }
+	    }
+   }
+
+	 
+</script>
+</header>
+
+
+        　　<h2>最新文章</h2>
+　　<ul>
+　　　　
+　　　　　　<li> <a href="/2016/12/02/test2/">just test</a>02 Dec 2016</li>
+　　　　
+　　　　　　<li> <a href="/jekyll/update/2016/11/27/test/">测试一下</a>27 Nov 2016</li>
+　　　　
+　　　　　　<li> <a href="/jekyll/update/2016/11/27/welcome-to-jekyll/">Welcome to Jekyll!</a>27 Nov 2016</li>
+　　　　
+　　　　　　<li> <a href="/2014/01/21/hello-world/">你好，世界</a>21 Jan 2014</li>
+　　　　
+　　</ul>
+
+
+
+    <footer>
+  <div class="text-center">
+    <ul class="list-inline text-center">
+      
+      <li>
+        <a target="_blank" href="http://weibo.com/Ling Lin">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/LingLinyp">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.google.com/recaptcha/mailhide/d?k=01jRYoovDTKNeup76Ld9oC5g==&amp;c=YFOV2oAqpscYs-HUbkQzhsPDEvO7appO6fJh1uPyK2c=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k=01jRYoovDTKNeup76Ld9oC5g==&amp;c=YFOV2oAqpscYs-HUbkQzhsPDEvO7appO6fJh1uPyK2c=','','width=500,height=300');return false;">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p>Copyright © 2016 林玲. Powered by Jekyll && GitHub.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+
+  </body>
+
 </html>

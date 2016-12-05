@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<h1>Mee</h1>
-</body>
-</html>
+---
+layout: default
+---
+　　<h2>最新文章</h2>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ post.date | date_to_string }}</li>
+　　　　{% endfor %}
+　　</ul>
+
+

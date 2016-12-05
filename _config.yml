@@ -12,7 +12,7 @@ email: your-email@domain.com
 description: "Ling's Blog"
 keywords: "Blog, Ling Lin, Lin Ling, 博客，前端，互联网，IT，设计，杂记"
 timezone: Aisa/Shanghai
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author 
