@@ -11,7 +11,7 @@ subtitle: "欢迎来到我的个人博客"
 email: your-email@domain.com
 description: "Ling's Blog"
 keywords: "Blog, Ling Lin, Lin Ling, 博客，前端，互联网，IT，设计，杂记"
-timezone: Aisa/Shanghai
+timezone: Asia/Shanghai
 baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -36,7 +36,7 @@ linkedin_username: "Ling Lin"
 lazy_load_duoshuo: true
 
 # Build settings
-permalink: pretty
+#permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
