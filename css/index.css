@@ -16,7 +16,7 @@ p {
 .navbar-custom {
   border: none;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: rgba(0,0,0,0.5);
+  background: none;
 }
 .navbar-custom .navbar-brand {  
   height: 60px;
@@ -26,7 +26,7 @@ p {
   font-size: 18px;
 }
 .navbar-custom .navbar-brand:hover, .navbar-custom .nav li a:hover {
-  color: #257eb7 ;
+  color:  rgb(250, 218, 94);
 }
 .navbar-custom .nav li a {
   color: #fff;
@@ -36,8 +36,9 @@ p {
   font-size: 16px;
   letter-spacing: 1px;
 }
-.animate-header {
-  margin-top:-20px;
+.main{
+  background: #66ccff;
+  color:#333;
 }
 .animate-header{
   background: no-repeat center center;
@@ -52,11 +53,41 @@ p {
   padding-top: 200px;
   padding-bottom: 150px;
 }
-.animate-header h2 {
-  color: #fff;
-}
 
 #MyCanvas{
-   background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#040429), color-stop(100%,#257eb7))
+  /* background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#040429), color-stop(100%,#257eb7))*/
+   background: no-repeat center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+   
 }
 
+footer {
+  margin: 50px 0;
+}
+
+@media (min-width: 992px) {
+  .posts-container, .sidebar-container { padding-right: 5%; }
+}
+.post p { margin-top: 6px; }
+.post-date {
+  display: inline-block;
+  color: #9a9a9a;  
+}
+
+.pagination { width: 100%; }
+.pagination a, .pagination span {
+  display: inline-block;
+  border: 1px solid #66ccff;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  color:#66ccff;
+}
+.pagination a:hover {
+  color:#fff;
+  background: #66ccff;
+  text-decoration: none;
+}

@@ -1,11 +1,36 @@
 ---
-layout: default
+layout: page
 ---
-　　<h2>最新文章</h2>
-　　<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ post.date | date_to_string }}</li>
-　　　　{% endfor %}
-　　</ul>
+<!--标题、日期、摘要  -->
+<div>
+    {% for post in site.posts %}
+    <div class="post">
+        <h3> {{ post.title }}</h3>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+        {{ post.excerpt }}
+        <span class="pagination"><a href="{{ post.url }}">READ MORE</a></span>
+    </div>
+    <hr/>
+    {% endfor %}
+</div>
+
+<!-- 分页链接 -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/'}}">Older</a>
+  {% else %}
+    <span>Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pull-right" href="{{  paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/'}}">Newer</a>
+  {% else %}
+    <span class="pull-right">Newer</span>
+  {% endif %}   
+</div>
+{% endif %}
+
+
+　　
 
 
