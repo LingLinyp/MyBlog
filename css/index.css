@@ -3,7 +3,7 @@
 
 body { 
   font-size: 1.6rem;
-  font-family: 'Microsoft Jhenghei', 'Microsoft Yahei'; 
+  font-family: 'Microsoft Yahei' ,'Microsoft Jhenghei' ; 
 }
 h1,h2,h3,h4{
   font-family: "Hiragino Sans GB", "Avenir Next", Helvetica, Georgia, "Times New Roman", serif;
@@ -55,14 +55,12 @@ p {
 }
 
 #MyCanvas{
-  /* background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#040429), color-stop(100%,#257eb7))*/
    background: no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      background-size: cover;
      -o-background-size: cover;
-   
-}
+   }
 
 footer {
   margin: 50px 0;
@@ -92,3 +90,26 @@ footer {
   text-decoration: none;
 }
 
+/*About Me*/
+
+.aboutme .fa{
+  color:#66ccff;
+}
+.aboutme hr{
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #66ccff, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #66ccff, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #66ccff, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #66ccff, #f0f0f0); 
+    margin:15px;
+    width: 10%;
+  }
+.aboutme h3{
+  color:#a6a6a6;
+  font-family: Verdana, sans-serif;
+}
+.aboutme a{
+  color:#66ccff;
+  text-decoration: none;
+}
