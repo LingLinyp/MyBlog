@@ -13,7 +13,7 @@ description: "Ling's Blog"
 keywords: "Blog, Ling Lin, Lin Ling, 博客，前端，互联网，IT，设计，杂记"
 timezone: Asia/Shanghai
 baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://linglinyp.com"
 
 # Author 
 author: "Ling Lin"
@@ -27,13 +27,10 @@ linkedin_username: "linglinyp"
 
 
 # Comments   
-# support provider: disqus, duoshuo
-#comments_provider: disqus
+#support provider: duoshuo
 # !!!Important!!! Please modify usernames below to yours
 duoshuo_username: linglinyp
-#disqus_username: mzlogin
-# 在使用 disqus 的时候点击显示多说评论框
-lazy_load_duoshuo: true
+
 
 # Build settings
 #permalink: pretty

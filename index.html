@@ -6,8 +6,8 @@ layout: page
     {% for post in site.posts %}
     <div class="post">
         <h3> {{ post.title }}</h3>
+        <div class="excerpt">{{ post.excerpt }}</div>
         <span class="post-date">{{ post.date | date_to_string }}</span>
-        {{ post.excerpt }}
         <span class="pagination"><a href="{{ post.url }}">READ MORE</a></span>
     </div>
     <hr/>

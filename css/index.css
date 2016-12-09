@@ -5,6 +5,9 @@ body {
   font-size: 1.6rem;
   font-family: 'Microsoft Yahei' ,'Microsoft Jhenghei' ; 
 }
+h3{
+  font-weight: 600;
+}
 h1,h2,h3,h4{
   font-family: "Hiragino Sans GB", "Avenir Next", Helvetica, Georgia, "Times New Roman", serif;
 }
@@ -70,9 +73,23 @@ footer {
   .posts-container, .sidebar-container { padding-right: 5%; }
 }
 .post p { margin-top: 6px; }
-.post-date {
-  display: inline-block;
-  color: #9a9a9a;  
+.post-date{
+  /*display: inline-block;
+  color: #a6a6a6; 
+  font-family: 'Trocchi', serif;
+  font-style: oblique;*/
+  color: #bbc3c8; 
+   display: inline-block; 
+   font-family: 'Georgia', serif; 
+   font-style: italic; 
+   font-size: 18px; 
+   
+}
+.excerpt {
+   color:#a6a6a6 ; 
+ 
+   font-style: italic; 
+
 }
 
 .pagination { width: 100%; }
